@@ -1,16 +1,15 @@
-import React from 'react';
+import from 'lodash';
+import TodosListHeader from './todos-list-header';
 
 
 export default class TodosList extends React.Component {
 	render() {
 		return (
 			<table>
-				<thead>
+				<TodosListHeader />
 				<tr>
-					<th>Task</th>
-					<th>Action</th>
+					{this.renderItems()}
 				</tr>
-				</thead>
 
 				</table>
 
